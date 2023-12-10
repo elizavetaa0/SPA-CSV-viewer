@@ -1,0 +1,11 @@
+:root {
+  --bg-colour: #CBCBCB;
+  --font-family: 'Noto Sans';
+  --main-txt-size: 12px;
+  --font-colour:  #000000;
+  --error-colour: #FF6565;
+  --default-btn-colour: #6346B4; 
+  --hover-btn-colour: #A88EF0;
+  --active-btn-colour: #311F63; 
+  --hover-table-colour: rgba(99, 70, 180, 0.25); 
+}

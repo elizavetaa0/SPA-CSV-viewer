@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Просмотр CSV</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+</head>
+<body class="page">
+
+  <div id="main-screen">
+    <div class="error-block" id="error-message">
+      <p class="error-block__text">Неправильный формат файла, разрешены только файлы .CSV</p>
+    </div>
+
+    <div class="csv-block">
+      <h1 class="csv-block__header" >
+        Выберите файл в формате CSV
+      </h1>
+      <input type="file" class="csv-file__input" style="display: none;">
+      <button class="csv-block__button button">Выберите файл</button>
+    </div>
+  </div>
+  
+  <div id="data-screen" style="display: none;">
+    <input type="file" class="csv-file__input" style="display: none;">
+    <button class="new-data__button button">Загрузить новый файл</button>
+    <table id="data-table" class="data-table">
+      <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Номер телефона</th>
+            <th>email</th>
+            <th>Дата рождения</th>
+            <th>Адрес</th>
+        </tr>
+    </thead>
+    <tbody id="data-body" class="table"></tbody>
+    </table>
+  </div>
+
+</body>
+<script src="./scripts/index.js"></script>
+</html>
